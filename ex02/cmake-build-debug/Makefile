@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /goinfre/casubmar/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /snap/clion/135/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /goinfre/casubmar/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /snap/clion/135/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/casubmar/school/cpp/cpp03/ex02
+CMAKE_SOURCE_DIR = /home/casubmar/school/cpp/day03/ex02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/casubmar/school/cpp/cpp03/ex02/cmake-build-debug
+CMAKE_BINARY_DIR = /home/casubmar/school/cpp/day03/ex02/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/casubmar/school/cpp/cpp03/ex02/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/goinfre/casubmar/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/135/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/goinfre/casubmar/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/135/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/casubmar/school/cpp/cpp03/ex02/cmake-build-debug/CMakeFiles /Users/casubmar/school/cpp/cpp03/ex02/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/casubmar/school/cpp/day03/ex02/cmake-build-debug/CMakeFiles /home/casubmar/school/cpp/day03/ex02/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/casubmar/school/cpp/cpp03/ex02/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/casubmar/school/cpp/day03/ex02/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,6 +143,87 @@ ex02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/build
 .PHONY : ex02/fast
 
+ClapTrap.o: ClapTrap.cpp.o
+
+.PHONY : ClapTrap.o
+
+# target to build an object file
+ClapTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ClapTrap.cpp.o
+.PHONY : ClapTrap.cpp.o
+
+ClapTrap.i: ClapTrap.cpp.i
+
+.PHONY : ClapTrap.i
+
+# target to preprocess a source file
+ClapTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ClapTrap.cpp.i
+.PHONY : ClapTrap.cpp.i
+
+ClapTrap.s: ClapTrap.cpp.s
+
+.PHONY : ClapTrap.s
+
+# target to generate assembly for a file
+ClapTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ClapTrap.cpp.s
+.PHONY : ClapTrap.cpp.s
+
+FragTrap.o: FragTrap.cpp.o
+
+.PHONY : FragTrap.o
+
+# target to build an object file
+FragTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/FragTrap.cpp.o
+.PHONY : FragTrap.cpp.o
+
+FragTrap.i: FragTrap.cpp.i
+
+.PHONY : FragTrap.i
+
+# target to preprocess a source file
+FragTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/FragTrap.cpp.i
+.PHONY : FragTrap.cpp.i
+
+FragTrap.s: FragTrap.cpp.s
+
+.PHONY : FragTrap.s
+
+# target to generate assembly for a file
+FragTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/FragTrap.cpp.s
+.PHONY : FragTrap.cpp.s
+
+ScavTrap.o: ScavTrap.cpp.o
+
+.PHONY : ScavTrap.o
+
+# target to build an object file
+ScavTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ScavTrap.cpp.o
+.PHONY : ScavTrap.cpp.o
+
+ScavTrap.i: ScavTrap.cpp.i
+
+.PHONY : ScavTrap.i
+
+# target to preprocess a source file
+ScavTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ScavTrap.cpp.i
+.PHONY : ScavTrap.cpp.i
+
+ScavTrap.s: ScavTrap.cpp.s
+
+.PHONY : ScavTrap.s
+
+# target to generate assembly for a file
+ScavTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ScavTrap.cpp.s
+.PHONY : ScavTrap.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +260,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ex02"
+	@echo "... ClapTrap.o"
+	@echo "... ClapTrap.i"
+	@echo "... ClapTrap.s"
+	@echo "... FragTrap.o"
+	@echo "... FragTrap.i"
+	@echo "... FragTrap.s"
+	@echo "... ScavTrap.o"
+	@echo "... ScavTrap.i"
+	@echo "... ScavTrap.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

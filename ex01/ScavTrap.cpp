@@ -108,8 +108,8 @@ void ScavTrap::beRepaired(unsigned int amount) {
 	}
 }
 
-void ScavTrap::challengeNewcomer() const {
-	if (this->_hp) {
+void ScavTrap::challengeNewcomer() {
+	if (this->_hp && this->_energyPoints) {
 		std::string challenges[5] = {
 				this->_name + ": Now you need eat some filthy.....\n",
 				this->_name + ": Now you need do five somersaults ... that's the way\n",
@@ -117,8 +117,14 @@ void ScavTrap::challengeNewcomer() const {
 				this->_name + ": Now you need to shave the gorilla\n",
 				this->_name + ": Now you need to sleep ... in lava\n"
 		};
+		this->_energyPoints -= 25;
+		std::cout << "SC4V-TP " << this->_name << " prepares to attack and spends 25 energy, now he has "
+				  << this->_energyPoints << std::endl;
 		std::cout << challenges[rand() % 5];
 	} else {
-		std::cout << this->_diedMsg;
+		if (!this->_hp)
+			std::cout << this->_diedMsg;
+		else
+			std::cout << "SC4V-TP " << this->_name << " have not energy!\n";
 	}
 }

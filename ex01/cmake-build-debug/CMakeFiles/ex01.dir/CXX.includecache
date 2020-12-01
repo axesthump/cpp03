@@ -6,23 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/casubmar/school/cpp/cpp03/ex01/FragTrap.hpp
+/home/casubmar/school/cpp/day03/ex01/ScavTrap.cpp
+ScavTrap.hpp
+/home/casubmar/school/cpp/day03/ex01/ScavTrap.hpp
+
+/home/casubmar/school/cpp/day03/ex01/ScavTrap.hpp
 iostream
 -
 ctime
 -
 cstdlib
 -
-
-/Users/casubmar/school/cpp/cpp03/ex01/ScavTrap.hpp
-iostream
--
-
-/Users/casubmar/school/cpp/cpp03/ex01/main.cpp
-iostream
--
-FragTrap.hpp
-/Users/casubmar/school/cpp/cpp03/ex01/FragTrap.hpp
-ScavTrap.hpp
-/Users/casubmar/school/cpp/cpp03/ex01/ScavTrap.hpp
 

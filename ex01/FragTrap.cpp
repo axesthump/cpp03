@@ -151,7 +151,7 @@ int FragTrap::runAwayAttack(const std::string &target) {
 }
 
 int FragTrap::vaulthunter_dot_exe(const std::string &target) {
-	if (this->_energyPoints) {
+	if (this->_energyPoints && this->_hp) {
 		typedef int (FragTrap::*Attacks)(const std::string &target);
 		Attacks superAttacks[5] = {&FragTrap::vertuha, &FragTrap::superMegaPunch,
 								   &FragTrap::absoluteBlow, &FragTrap::kiss, &FragTrap::runAwayAttack};
@@ -160,7 +160,10 @@ int FragTrap::vaulthunter_dot_exe(const std::string &target) {
 				  << this->_energyPoints << std::endl;
 		return ((this->*superAttacks[rand() % 5])(target));
 	} else {
-		std::cout << "FR4G-TP " << this->_name << " have not energy!\n";
+		if (!this->_hp)
+			std::cout << this->_diedMsg;
+		else
+			std::cout << "FR4G-TP " << this->_name << " have not energy!\n";
 		return 0;
 	}
 }

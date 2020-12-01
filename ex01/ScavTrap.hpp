@@ -6,6 +6,8 @@
 #define EX01_SCAVTRAP_HPP
 
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
 
 class ScavTrap {
 
@@ -20,7 +22,7 @@ public:
 	int meleeAttack(std::string const& target) const;
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
-	void challengeNewcomer() const;
+	void challengeNewcomer();
 
 
 	int	getHp() const;
